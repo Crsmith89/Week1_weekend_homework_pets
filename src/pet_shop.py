@@ -8,10 +8,14 @@ def get_total_cash(pet_shop):
     return pet_shop["admin"]["total_cash"]
 
 # 3 - Add or remove cash +10, += operator performs an addition operator and then assigns the result of the operation to a variable.
-def add_or_remove_cash(pet_shop, amount):
-    pet_shop["admin"]["total_cash"] += amount
+def add_or_remove_cash(pet_shop, total):
+    pet_shop["admin"]["total_cash"] += total
     
+# 4 - add_or_remove_cash -10
+def add_or_remove_cash(pet_shop, total):
+    pet_shop["admin"]["total_cash"] -= total
 
-
-
+# Get pets sold
+def get_pets_sold(pet_shop):
+    return pet_shop["admin"]["pets_sold"]
 

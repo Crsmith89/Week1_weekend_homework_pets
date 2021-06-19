@@ -19,3 +19,8 @@ def add_or_remove_cash(pet_shop, total):
 def get_pets_sold(pet_shop):
     return pet_shop["admin"]["pets_sold"]
 
+# Increase pets sold, using +=operator as per question 3 assigning result of the operation to a variable then return increase. 
+def increase_pets_sold(pet_shop, total):
+    pet_shop["admin"]["pets_sold"] += total
+    return pet_shop["admin"]["pets_sold"]
+
